@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.yuanping.feihuaapp.login.RegisterChose">
+
+    <ImageView
+        android:layout_width="326dp"
+        android:layout_height="181.5dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="72dp"
+        android:background="@mipmap/login_ill" />
+
+    <TextView
+        android:id="@+id/temp_one"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="306dp"
+        android:text="@string/register_with_third"
+        android:textColor="#758a99"
+        android:textSize="12sp" />
+
+    <RelativeLayout
+        android:id="@+id/temp_two"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/temp_one"
+        android:layout_marginTop="24dp">
+
+        <ImageView
+            android:id="@+id/weixin_login"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_centerHorizontal="true"
+            android:background="@mipmap/weixin48" />
+
+        <ImageView
+            android:id="@+id/qq_login"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginRight="60dp"
+            android:layout_toLeftOf="@+id/weixin_login"
+            android:background="@mipmap/qq48" />
+
+        <ImageView
+            android:id="@+id/weibo_login"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginLeft="60dp"
+            android:layout_toRightOf="@+id/weixin_login"
+            android:background="@mipmap/weibo48" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/temp_two"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="44dp"
+        android:text="@string/or"
+        android:textColor="#758a99"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/registerWithPhone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/temp_two"
+        android:clickable="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="72dp"
+        android:background="@mipmap/button_red"
+        android:gravity="center"
+        android:text="@string/register_with_phone"
+        android:textColor="#f3f9f1"
+        android:textSize="14sp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/registerWithPhone"
+        android:layout_alignTop="@+id/registerWithPhone"
+        android:layout_marginLeft="13dp"
+        android:layout_marginTop="15dp"
+        android:background="@mipmap/flower_b" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:id="@+id/loginWithID"
+        android:layout_below="@+id/registerWithPhone"
+        android:text="@string/login_with_count"
+        android:textColor="#ff4777"
+        android:layout_marginTop="6.5dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="12sp" />
+</RelativeLayout>
+

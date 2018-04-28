@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:text="@string/register_with_phone"
+        android:textColor="#758a99"
+        android:textSize="18sp" />
+
+    <ImageView
+        android:id="@+id/register_with_phone_return_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="40dp"
+        android:background="@mipmap/return_back" />
+
+    <ImageView
+        android:id="@+id/register_with_phone_help_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="18dp"
+        android:layout_marginTop="40dp"
+        android:background="@mipmap/help" />
+
+    <ImageView
+        android:layout_width="245dp"
+        android:layout_height="62.5dp"
+        android:layout_marginLeft="67dp"
+        android:layout_marginTop="128dp"
+        android:background="@mipmap/regis_ill" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="246dp"
+        android:autoSizeMaxTextSize="14sp"
+        android:text="@string/register_with_phone_input"
+        android:textColor="#758a99"
+        android:textSize="14sp" />
+
+    <EditText
+        android:id="@+id/register_with_phone_number"
+        style="?android:attr/textViewStyle"
+        android:layout_width="202dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="293dp"
+        android:background="@null"
+        android:cursorVisible="true"
+        android:drawableBottom="@mipmap/line_200"
+        android:gravity="top|center_horizontal"
+        android:hint="@string/hint"
+        android:inputType="phone"
+        android:textColorHint="#758a99"
+        android:textCursorDrawable="@mipmap/lightbar1"
+        android:textSize="14sp" />
+
+    <ImageView
+        android:id="@+id/register_with_phone_next_image"
+        android:layout_width="9.5dp"
+        android:layout_height="13.5dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="44dp"
+        android:layout_marginTop="384dp"
+        android:background="@mipmap/next_two" />
+
+    <TextView
+        android:id="@+id/register_with_phone_next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="383dp"
+        android:layout_toLeftOf="@+id/register_with_phone_next_image"
+        android:clickable="true"
+        android:text="@string/register_with_phone_next"
+        android:textColor="#ff4777"
+        android:textSize="12sp" />
+
+</RelativeLayout>

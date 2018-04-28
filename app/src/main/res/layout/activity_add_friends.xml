@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.yuanping.feihuaapp.friends.AddFriends">
+
+    <ImageView
+        android:layout_width="18dp"
+        android:layout_height="22dp"
+        android:id="@+id/add_return_back"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="35dp"
+        android:background="@mipmap/return_back" />
+
+    <ImageView
+        android:id="@+id/add_head_image"
+        android:layout_width="115dp"
+        android:layout_height="115dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="104dp"
+        android:background="@mipmap/head_edge" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/add_user_image"
+        android:layout_width="115dp"
+        android:layout_height="115dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="104dp"
+        android:background="@drawable/user_image_temp" />
+
+    <TextView
+        android:id="@+id/add_user_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/add_head_image"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="14dp"
+        android:text="@string/user_name"
+        android:textColor="@color/color_user_name"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/add_user_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/add_user_name"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:text="@string/user_id"
+        android:textColor="@color/color_user_name"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/add_friend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:background="@mipmap/button_red"
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="80dp"
+        android:text="@string/add_friend"
+        android:textColor="#f3f9f1"
+        android:textSize="18sp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/add_friend"
+        android:layout_alignTop="@+id/add_friend"
+        android:layout_marginLeft="13dp"
+        android:layout_marginTop="15dp"
+        android:background="@mipmap/flower_b" />
+
+</RelativeLayout>
